@@ -1,0 +1,36 @@
+﻿Title,Column 1,Column 2,Column 3,Column 4,Column 5,Column 6,Column 7,Column 8
+Paper Title,Year,Conference,Research Objective,Dataset,Methodology Used,Parameters used for Evaluating,Accuracy,Limitations of tested systems
+Multimodal Meme Dataset (MultiOFF) for Identifying Offensive Content in Image and Text,2020,"Workshop on Trolling, Aggression and Cyberbullying (TRAC)","Created a meme classifier to detect offensive content by essential modalities combination; leveraging 2016 U.S. presidential election memes, the MultiOFF dataset was formed, facilitating the development of an effective offensive content detection system.",https://drive.google.com/drive/folders/1hKLOtpVmF45IoBmJPwojgq6XraLtHmV6?usp=sharing,"An early fusion technique is being used to combine the image and text modality, and its effectiveness is being investigated by comparing it with a text- and an image-only baseline.","Precision, Recall, and F-Score",,"The paper's dataset is relatively small and manually annotated, posing challenges due to limited diversity and potential bias, underscoring the importance of addressing these issues in research and analysis."
+Exploring Hate Speech Detection in Multimodal Publications,2019,IEEE Winter Conference on Applications of Computer Vision (WACV),"This study focuses on hate speech detection in multimodal publications, combining text and images. Using the Twitter dataset MMHS150K, the researchers propose various models that jointly analyze textual and visual information, comparing their performance with unimodal detection methods.",https://www.kaggle.com/datasets/victorcallejasf/multimodal-hate-speech,"In the Multimodal Treatment section, the authors introduce the TKM (Textual Kernel Model) for hate speech detection, employing text and image fusion. They train various models (FCM, SCM, TKM) considering input availability, analyze their contributions, and compare multimodal performance. ","F-score, Accuracy and Area under ROC curve",68.20%,"Challenges in hate speech detection include subjective judgment discrepancies in annotations, particularly pronounced in multimodal tasks. The intricate relations between visual and textual elements in multimodal publications, along with a limited dataset of examples, pose difficulties for neural network learning."
+DISARM: Detecting the Victims Targeted by Harmful Memes,2022,Findings of the Association for Computational Linguistics: NAACL 2022,"Introduce DISARM (Detecting victims targeted by harmful Memes), employing named entity recognition and person identification to identify meme entities. Our framework incorporates a contextualized multimodal deep neural network for classifying harmful intent. ",https://github.com/LCS2-IIITD/DISARM/tree/main/DISARM_Dataset,"The paper introduces DISARM (Detecting Entities Targeted by Harmful Memes), a multimodal deep learning framework that combines visual and textual information to detect entities targeted by harmful memes. ","Accuracy, precision (0.74), recall (0.86), F1-score (0.78)",73.90%,"The dataset exhibits a notable bias as it is excessively centered around the United States, potentially introducing biases owing to manual annotation, thereby limiting its representativeness and generalizability to diverse cultural and linguistic contexts."
+"An approach to detect offence in Memes using
+Natural Language Processing(NLP) and Deep
+learning",2021,"International Conference on Computer Communication and Informatics (ICCCI -2021), Jan. 27 – 29, 2021, Coimbatore, INDIA","This paper presents an approach to
+detect offense in memes using Natural Language Processing (NLP)
+and deep learning.",https://github.com/roushangiri/Offence-Evaluation/blob/master/Meme_dataset.csv,"First, it will extract the text from
+the given image, then it will classify the given text as offensive or
+not offensive. If the text is found to be offensive then in the third
+step it will further classify offensive text in three categories namely
+slight offensive, very offensive and hateful offensive.","Accuracy, Training Loss, Value Accuracy, Value Loss",93%,"Cyberbullying often involves image-based harassment, where offensive images are used to target individuals or groups. Excluding the image analysis component limits the model's capability to identify and mitigate instances of image-based cyberbullying, which is a prevalent and concerning form of online harassment."
+Racist or Sexist Meme? Classifying Memes beyond Hateful,2021,Proceedings of the Fifth Workshop on Online Abuse and Harms,"This work
+presents a multimodal pipeline that takes both
+visual and textual features from memes into
+account to (1) identify the protected category
+(e.g. race, sex etc.) that has been attacked;
+and (2) detect the type of attack (e.g. contempt,
+slurs etc.).","https://www.workshopononlineabuse.com  
+https://github.com/facebookresearch/
+https://github.com/harisbinzia/HatefulMemes ","A simple
+four step pipeline: (i) We extract text from the meme. (ii) We embed the meme image and the text into
+visual and textual representations. (iii) We concatenate the visual and textual embeddings. (iv) We train a multi-label Logistic Regression
+classifier using scikit-learn to predict the protected category attacked
+in the meme and the type
+of attack.","Accuracy, Precision, Recall, f1",,"The dataset used for evaluation is imbalanced, with a large number of non-hateful memes compared to hateful ones. Imbalanced datasets can pose challenges in training models, and the paper does not thoroughly address the potential impact of this class imbalance on the model's performance and generalization to real-world scenarios."
+"Hate Speech in Pixels: Detection of Offensive Memes
+towards Automatic Moderation",2019,Universität Politecnica de Catalunya - UPC,"The motivation behind this objective is the significant impact of memes, a popular form of multimedia content, in spreading hate through social networks. The goal is to develop a system that can automatically detect hate speech in memes and contribute to reducing the harmful societal impact of such content.",https://www.kaggle.com/sayangoswami/reddit-memes-dataset,"Text Extraction: Optical Character Recognition (OCR) is used to extract text from meme images.
+Language Encoding: The extracted text is encoded using BERT representation for language, generating contextual word embeddings that are then averaged to form a sentence embedding.
+Visual Encoding: The visual information is encoded using a VGG-16 convolutional neural network trained on ImageNet. Activations from a hidden layer are used as feature vectors for the image.
+Multimodal Fusion: The encoded representations from language and vision are concatenated to form a multimodal representation.
+Classification: A multi-layer perceptron (MLP) is trained on the multimodal representation to predict the hate speech detection score.","Accuracy, Precision, Batch, Epoch","Multimodal: 0.823
+Image: 0.804
+Text: 0.750","Despite achieving some success, the task of hate speech detection in memes is far from being solved, given the high abstraction level of the messages contained in memes. The complexity of detecting hate speech in multimodal content poses challenges for automated systems."
